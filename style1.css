@@ -1,0 +1,37 @@
+/* Стили для блока текста */
+
+#callback {
+    width: 300px;
+    height: 150px;
+    background-color: grey;
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-103%);
+}
+
+/* Стили для абзаца */
+
+#callback p {
+    color: #fff;
+    padding: 22px;
+}
+
+/* Стили для псевдоэлемента */
+
+#callback:after {
+    content: 'Обратная связь';
+    background-color: pink;  
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px;
+    position: absolute;
+    left: 300px;
+    transform: rotate(-90deg);
+    transform-origin: 0% 7%;  
+}
+
+#callback:hover {
+    transform: translateX(-3%);
+    transition: all 5s ease;
+}
